@@ -74,7 +74,7 @@
                     <li class="benefits-item">&mdash;&nbsp;Все хлопоты с&nbsp;таможенным оформлением мы&nbsp;берем на&nbsp;себя;</li>
                     <li class="benefits-item">&mdash;&nbsp;Вам не&nbsp;обязательно иметь на&nbsp;руках всю сумму&nbsp;&mdash; в&nbsp;момент сделки Вы&nbsp;вносите&nbsp;50%, оставшаяся сумма уплачивается при доставке.</li>
                 </ul>
-                <p><a href="" class="btn btn-primary">Оставить заявку</a></p>
+                <p><a href="#contact_form" class="btn btn-primary fancybox">Оставить заявку</a></p>
             </section>
 
             <section class="work">
@@ -101,18 +101,20 @@
         </div><!-- /Content -->
     </div><!-- /Page -->
 
-    <div id="contact_form">
-<aside class="request">
-                        <form action="{% url 'contact_form' %}" method="post">
-                            <h2>Заполни форму и&nbsp;получи подарок!</h2>
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                            <div class="control"></div>
-                            <div class="control control-submit">
-                                <input type="submit" tabindex="4" value="Отправить" class="btn">
-                            </div>
-                        </form>
-                    </aside>
+    <div class="popup">
+        <div id="contact_form">
+            <aside class="request" style="margin: 0px;">
+                <form action="{% url 'contact_form' %}" method="post">
+                    <h2>Заполни форму и&nbsp;получи подарок!</h2>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="control"></div>
+                    <div class="control control-submit">
+                        <input type="submit" tabindex="4" value="Отправить" class="btn">
+                    </div>
+                </form>
+            </aside
+        </div>
     </div>
 
 </body>
