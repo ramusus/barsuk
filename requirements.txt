@@ -1,0 +1,6 @@
+Django
+fabric
+django-subdomains
+django-contact-form
+-e git+git@github.com:ramusus/django_utils.git#egg=django-utils
+-e git+git@github.com:ramusus/fabriclassed.git#egg=fabriclassed

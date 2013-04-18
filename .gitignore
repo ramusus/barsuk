@@ -1,0 +1,10 @@
+/env/
+/logs/
+/tmp/
+/data/
+/various/
+
+/project/static/
+/project/settings_local.py
+/ford_fb_page
+/celeryev.pid
