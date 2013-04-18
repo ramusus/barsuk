@@ -1,0 +1,107 @@
+@import "reset.css";
+
+/* Global styles
+----------------------------------------------- */
+html, body, .page {height:100%;}
+body > .page {height:auto; min-height:100%;}
+
+body, input[type="text"] {background:#fff; font:30px/37px Verdana, Tahoma, Arial, sans-serif; color:#000;}
+
+.page {margin:0 auto; min-width:1180px; max-width:1550px; padding:0 10px;}
+
+h2 {font-size:30px; line-height:37px; font-weight:normal;}
+
+.clearfix {*zoom:1;}
+.clearfix:before,
+.clearfix:after {display:table; content:""; line-height:0;}
+.clearfix:after {clear:both;}
+
+/* =Buttons
+----------------------------------------------- */
+.btn {
+    display:-moz-inline-stack; display:inline-block; *display:inline; *zoom:1;
+    line-height:84px; height:84px; font-size:26px; color:#fff; text-decoration:none; min-width:213px; border:0; text-align:center; text-shadow:3px 4px 5px rgba(0,0,0,.75);
+	-webkit-border-radius: 20px;
+     -khtml-border-radius: 20px;
+       -moz-border-radius: 20px;
+         -o-border-radius: 20px;
+    	    border-radius: 20px;
+    background-color: #5b4e3b;
+	background-image: -webkit-linear-gradient(bottom, #000, #fff);
+	background-image:    -moz-linear-gradient(bottom, #000, #fff);
+	background-image:     -ms-linear-gradient(bottom, #000, #fff);
+	background-image:      -o-linear-gradient(bottom, #000, #fff);
+	background-image:         linear-gradient(to top, #000, #fff);
+    -webkit-box-shadow:3px 4px 5px rgba(0,0,0,.75), inset 3px 4px 9px rgba(255,255,255,.76), inset 0 0 80px 6px #fff;
+     -khtml-box-shadow:3px 4px 5px rgba(0,0,0,.75), inset 3px 4px 9px rgba(255,255,255,.76), inset 0 0 80px 6px #fff;
+       -moz-box-shadow:3px 4px 5px rgba(0,0,0,.75), inset 3px 4px 9px rgba(255,255,255,.76), inset 0 0 80px 6px #fff;
+         -o-box-shadow:3px 4px 5px rgba(0,0,0,.75), inset 3px 4px 9px rgba(255,255,255,.76), inset 0 0 80px 6px #fff;
+            box-shadow:3px 4px 5px rgba(0,0,0,.75), inset 3px 4px 9px rgba(255,255,255,.76), inset 0 0 80px 6px #fff;
+}
+.btn-primary {
+    background: #f7f7f7;
+    -webkit-box-shadow:0 0 22px rgba(254,254,254,.35), 0 16px 11px rgba(149,149,149,.7), inset 0 11px 16px 6px rgba(152,152,152,.25), inset 0 0 6px rgba(154,154,154,.5);
+     -khtml-box-shadow:0 0 22px rgba(254,254,254,.35), 0 16px 11px rgba(149,149,149,.7), inset 0 11px 16px 6px rgba(152,152,152,.25), inset 0 0 6px rgba(154,154,154,.5);
+       -moz-box-shadow:0 0 22px rgba(254,254,254,.35), 0 16px 11px rgba(149,149,149,.7), inset 0 11px 16px 6px rgba(152,152,152,.25), inset 0 0 6px rgba(154,154,154,.5);
+         -o-box-shadow:0 0 22px rgba(254,254,254,.35), 0 16px 11px rgba(149,149,149,.7), inset 0 11px 16px 6px rgba(152,152,152,.25), inset 0 0 6px rgba(154,154,154,.5);
+            box-shadow:0 0 22px rgba(254,254,254,.35), 0 16px 11px rgba(149,149,149,.7), inset 0 11px 16px 6px rgba(152,152,152,.25), inset 0 0 6px rgba(154,154,154,.5);
+}
+
+/* =Header
+----------------------------------------------- */
+.header {background:url(../i/header-bg.jpg) 0 0 no-repeat; height:299px; position:relative; margin:30px 44px 24px 0; color:#fff;}
+.header h1, .header p {text-shadow:5px 9px 5px rgba(0,0,0,.75); margin:0 357px 0 88px;}
+.header h1 {font-size:60px; line-height:72px; font-weight:normal; margin-top:3px;}
+.header p {font-size:36px; text-align:right; margin-top:41px;}
+.header .contacts {
+    width:296px; text-align:center; float:right; clear:right; padding-top:52px; margin:0 -44px 0 0; line-height:30px; font-size:30px;
+    background:#5b4e3b;
+    -webkit-border-radius:18px;
+     -khtml-border-radius:18px;
+       -moz-border-radius:18px;
+         -o-border-radius:18px;
+            border-radius:18px;
+}
+.header .contacts span {font-size:24px; display:block; margin:20px 0 -5px;}
+.header .contacts .btn {margin:0 0 28px; width:270px;}
+
+/* =Content
+----------------------------------------------- */
+/* Columns */
+.col-l, .col-r {float:left; width:50%;}
+.col-r {clear:right;}
+
+/* Promo */
+.promo h2, .promo h3, .more h2 {font-weight:normal; text-align:center;}
+.promo h2 {font-size:48px; line-height:58px; text-shadow:3px 4px 5px rgba(0,0,0,.75); color:#e12400; margin:71px 0 111px;}
+.promo h3 {font-size:42px; line-height:51px;}
+.promo img {float:right;}
+
+/* More */
+.more {position:relative; margin-left:30px;}
+.more h2, .more .btn {font-size:48px; color:#763130;}
+.more h2 {line-height:58px; margin:22px 0 15px;}
+.more .btn {position:absolute; bottom:312px; left:50%; margin-left:-158px; width:327px; text-shadow:none;}
+
+/* Call btn */
+.call .btn {display:block; margin:59px 255px 43px; color:#000; text-shadow: 0 0 5px rgba(255,255,255,.75), 3px 4px 5px rgba(0,0,0,.75); font-size:60px; height:140px; line-height:140px;}
+
+/* =Media
+----------------------------------------------- */
+@media (max-width:1599px) {
+    body {font-size:24px; line-height:30px;}
+    /* =Header
+    ----------------------------------------------- */
+    .header h1, .header p {margin-left:48px; margin-right:300px;}
+    .header h1 {font-size:54px;}
+
+    /* Promo */
+    .promo h2 {font-size:38px; line-height:48px; margin-bottom:131px;}
+    .promo h3 {font-size:32px; line-height:41px;}
+
+    /* More */
+    .more h2, .more .btn {font-size:38px;}
+    .more h2 {line-height:48px; margin:42px 0 25px;}
+    .more .btn {bottom:242px;}    
+    .more img {max-width:100%;}
+}

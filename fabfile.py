@@ -11,7 +11,7 @@ class Fabric(BaseFabric, DjangoFabric, VirtualenvFabric):
     test_settings = 'settings_test'
     shell_plus = True
 
-    hosts = ['ram@movister.ru']
+    hosts = ['ram@kworx.ru']
     remote_project_path = '/var/www/barsuk'
     local_project_path = '/home/ramusus/workspace/barsuk'
     diff_dir = 'diffs'
@@ -28,21 +28,21 @@ class Fabric(BaseFabric, DjangoFabric, VirtualenvFabric):
     fixtures_map = (
     )
 
-#    def fab_deploy(self, migrate=False, upgrade=None):
-#        '''
-#        Deploy project to the remote host
-#            `migrate` boolean argument if neccesary to run syncdb and migrate (south) management commands
-#            `upgrade` list of applications separated by commas need to upgrade using pip
-#        '''
-#        local('git push')
-#        with cd(self.remote_project_path):
-#            run('git pull')
+    def fab_deploy(self, migrate=False, upgrade=None):
+        '''
+        Deploy project to the remote host
+            `migrate` boolean argument if neccesary to run syncdb and migrate (south) management commands
+            `upgrade` list of applications separated by commas need to upgrade using pip
+        '''
+        local('git push')
+        with cd(self.remote_project_path):
+            run('git pull')
 #            if migrate:
 #                self.run_manage('syncdb')
 #                self.run_manage('migrate')
 #            if upgrade:
 #                self.run_pip('install --upgrade %s' % upgrade.replace(',', ' '))
-#            sudo('./server restart')
+            sudo('./server restart')
 #        sudo('/etc/init.d/celerycam restart')
 #        sudo('/etc/init.d/celeryd restart')
 #

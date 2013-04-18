@@ -1,0 +1,154 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="ru"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="ru"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="ru"> <![endif]-->
+<!--[if IE 10 ]>    <html class="ie ie10" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="ru"><!--<![endif]-->
+<head>
+    <title>Природный камень для&nbsp;облицовки и ландшафта</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/css/naturkamen.css">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/css/common.css">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/js/fancybox/jquery.fancybox-1.3.4.css">
+    <script type="text/javascript" src="{{ MEDIA_URL }}/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{ MEDIA_URL }}/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="{{ MEDIA_URL }}/js/common.js"></script>
+    <!--[if lt IE 9]> <script type="text/javascript" src="{{ MEDIA_URL }}/js/html5.js"></script><![endif]-->
+</head>
+<body>
+    <div class="page">
+        <header class="header clearfix">
+            <p class="contacts">
+                Телефон для связи:<br>
+                +7 (968) 357-85-95<br>
+                +7 (965) 419-88-94<br>
+                <a href="#contact_form" class="btn btn-primary fancybox">Заказать звонок</a>
+            </p>
+            <h1>Природный камень для&nbsp;облицовки и ландшафта</h1>
+            <p>Опт и розница. Доставка по РФ</p>
+        </header><!-- /Header -->
+
+        <div class="content">
+            <div class="promo clearfix">
+                <div class="col-r">
+                    <aside class="request">
+                        <form action="{% url 'contact_form' %}" method="post">
+                            <h2>Оставить заявку</h2>
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <div class="control"></div>
+                            <div class="control control-submit">
+                                <input type="submit" tabindex="4" value="OK" class="btn">
+                            </div>
+                        </form>
+                    </aside>
+
+                    <aside class="reviews">
+                        <h2>Отзывы наших клиентов:</h2>
+                        <div class="reviews-items">
+                            <div class="reviews-item"></div>
+                            <div class="reviews-item"></div>
+                            <div class="reviews-item"></div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-l">
+                    <div class="catalog">
+                        <h2>Спецпредложение!</h2>
+                        <h3>Цены могут измениться в любой момент!</h3>
+                        <ul class="catalog-items">
+                            <li class="catalog-item">
+                                <h4>Песчаник серо-коричневый</h4>
+                                <img src="{{ MEDIA_URL }}/i/stone-1.jpg" alt="Песчаник серо-коричневый">
+                                <p><span class="old">от&nbsp;200.-</span> &nbsp;от&nbsp;130 р./м&sup2;</p>
+                            </li>
+                            <li class="catalog-item">
+                                <h4>Известняк светло-розовый</h4>
+                                <img src="{{ MEDIA_URL }}/i/stone-2.jpg" alt="Известняк светло-розовый">
+                                <p><span class="old">от&nbsp;450.-</span> &nbsp;от&nbsp;400 р./м&sup2;</p>
+                            </li>
+                            <li class="catalog-item">
+                                <h4>Брусчатка гранитная</h4>
+                                <img src="{{ MEDIA_URL }}/i/stone-3.jpg" alt="Брусчатка гранитная">
+                                <p><span class="old">от&nbsp;1020.-</span> &nbsp;от&nbsp;900 р./м&sup2;</p>
+                            </li>
+                            <li class="catalog-item">
+                                <h4>Песчаник желтый</h4>
+                                <img src="{{ MEDIA_URL }}/i/stone-4.jpg" alt="Песчаник желтый">
+                                <p><span class="old">от&nbsp;410.-</span> &nbsp;от&nbsp;360 р./м&sup2;</p>
+                            </li>
+                            <li class="catalog-item">
+                                <h4>Сланец Алтайский</h4>
+                                <img src="{{ MEDIA_URL }}/i/stone-5.jpg" alt="Сланец Алтайский">
+                                <p><span class="old">от&nbsp;730.-</span> &nbsp;от&nbsp;600 р./м&sup2;</p>
+                            </li>
+                            <li class="catalog-item">
+                                <h4>Лемезит</h4>
+                                <img src="{{ MEDIA_URL }}/i/stone-6.jpg" alt="Лемезит">
+                                <p><span class="old">от&nbsp;430.-</span> &nbsp;от&nbsp;380 р./м&sup2;</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-r">
+                    <aside class="request">
+                        <form action="{% url 'contact_form' %}" method="post">
+                            <h2>Оставить заявку</h2>
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <div class="control"></div>
+                            <div class="control control-submit">
+                                <input type="submit" tabindex="4" value="OK" class="btn">
+                            </div>
+                        </form>
+                    </aside>
+
+                    <aside class="reviews">
+                        <h2>Отзывы наших клиентов:</h2>
+                        <div class="reviews-items">
+                            <div class="reviews-item"></div>
+                            <div class="reviews-item"></div>
+                            <div class="reviews-item"></div>
+                        </div>
+                    </aside>
+                </div>
+            </div><!-- /Promo -->
+
+            <section class="benefits">
+                <p><a href="#contact_form" class="btn fancybox">Заказать звонок</a></p>
+                <h2>Пять причин, почему клиенты выбирают нас:</h2>
+                <ul class="benefits-items">
+                    <li class="benefits-item benefits-item-1">Высокое качество</li>
+                    <li class="benefits-item benefits-item-2">Собственный автопарк</li>
+                    <li class="benefits-item benefits-item-3">Конкурентные цены</li>
+                    <li class="benefits-item benefits-item-4">Собственное производство</li>
+                    <li class="benefits-item benefits-item-5">Возврат денег за брак</li>
+                </ul>
+            </section>
+
+        </div><!-- /Content -->
+    </div><!-- /Page -->
+
+    <div class="popup">
+        <div id="contact_form">
+            <aside class="request" style="margin: 0px;">
+                <form action="{% url 'contact_form' %}" method="post">
+                    <h2>Заполни форму и&nbsp;получи подарок!</h2>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="control"></div>
+                    <div class="control control-submit">
+                        <input type="submit" tabindex="4" value="Отправить" class="btn">
+                    </div>
+                </form>
+            </aside
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('input:text').wrap('<div class="control"></div>');
+    </script>
+
+</body>
+</html>

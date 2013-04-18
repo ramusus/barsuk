@@ -1,0 +1,180 @@
+@import "reset.css";
+
+/* Global styles
+----------------------------------------------- */
+html, body, .page {height:100%;}
+body > .page {height:auto; min-height:100%;}
+
+body, input[type="text"] {background:#fff; font:30px/37px Verdana, Tahoma, Arial, sans-serif; color:#000;}
+
+.page {margin:0 auto; min-width:1180px; max-width:1550px; padding:0 10px;}
+
+h2 {font-size:30px; line-height:37px; font-weight:normal;}
+
+.clearfix {*zoom:1; position:relative;}
+.clearfix:before,
+.clearfix:after {display:table; content:""; line-height:0;}
+.clearfix:after {clear:both;}
+
+/* =Buttons
+----------------------------------------------- */
+.btn {
+    display:-moz-inline-stack; display:inline-block; *display:inline; *zoom:1;
+    line-height:86px; height:86px; font-size:36px; color:#fff; text-decoration:none; min-width:213px; border:0; text-align:center;
+	-webkit-border-radius: 20px;
+     -khtml-border-radius: 20px;
+       -moz-border-radius: 20px;
+         -o-border-radius: 20px;
+    	    border-radius: 20px;
+    background-color: #cc900e;
+	background-image: -webkit-linear-gradient(top, #f2ab11, #cc900e);
+	background-image:    -moz-linear-gradient(top, #f2ab11, #cc900e);
+	background-image:     -ms-linear-gradient(top, #f2ab11, #cc900e);
+	background-image:      -o-linear-gradient(top, #f2ab11, #cc900e);
+	background-image:   linear-gradient(to bottom, #f2ab11, #cc900e);
+    -webkit-box-shadow:inset 0 0 21px rgba(0,0,0,.75);
+     -khtml-box-shadow:inset 0 0 21px rgba(0,0,0,.75);
+       -moz-box-shadow:inset 0 0 21px rgba(0,0,0,.75);
+         -o-box-shadow:inset 0 0 21px rgba(0,0,0,.75);
+            box-shadow:inset 0 0 21px rgba(0,0,0,.75);
+}
+.btn-primary {
+    background-color: #94816e;
+	background-image: -webkit-linear-gradient(top, #a6917c, #94816e);
+	background-image:    -moz-linear-gradient(top, #a6917c, #94816e);
+	background-image:     -ms-linear-gradient(top, #a6917c, #94816e);
+	background-image:      -o-linear-gradient(top, #a6917c, #94816e);
+	background-image:   linear-gradient(to bottom, #a6917c, #94816e);
+}
+.btn input {top:0; left:0; right:0; bottom:0; width:100%; padding:0; position:absolute; border:none; height:26px; text-indent:-9999em;}
+
+/* =Header
+----------------------------------------------- */
+.header {background:url(../i/header-bg.jpg) 0 0 no-repeat; height:341px; position:relative; margin:30px 44px 10px 0; color:#fff;}
+.header h1, .header p {margin-left:253px; margin-right:350px;}
+.header h1 {font-size:60px; line-height:72px; text-align:center; font-weight:normal; margin-top:30px;}
+.header p {font-size:36px; text-align:right; margin-top:84px;}
+.header .contacts {
+    width:325px; text-align:center; float:right; clear:right; padding-top:83px; margin:0 -44px 0 0; font-size:24px; line-height:30px;
+    background:#a6917c;
+    -webkit-border-radius:18px;
+     -khtml-border-radius:18px;
+       -moz-border-radius:18px;
+         -o-border-radius:18px;
+            border-radius:18px;
+    -webkit-box-shadow: 11px 18px 5px rgba(93,80,56,.75), inset 3px 4px 5px rgba(0,0,0,.75);
+     -khtml-box-shadow: 11px 18px 5px rgba(93,80,56,.75), inset 3px 4px 5px rgba(0,0,0,.75);
+       -moz-box-shadow: 11px 18px 5px rgba(93,80,56,.75), inset 3px 4px 5px rgba(0,0,0,.75);
+   	     -o-box-shadow: 11px 18px 5px rgba(93,80,56,.75), inset 3px 4px 5px rgba(0,0,0,.75);
+    	    box-shadow: 11px 18px 5px rgba(93,80,56,.75), inset 3px 4px 5px rgba(0,0,0,.75);
+}
+.header .contacts .btn {margin:69px 0 14px; font-size:24px; width:284px;}
+
+/* =Content
+----------------------------------------------- */
+/* Columns */
+.col-l {margin-right:375px;}
+.col-r {width:325px; position:absolute; top:0; right:0;}
+
+/* Catalog */
+.catalog {text-align:center;}
+.catalog h2, .catalog h3, .catalog h4 {font-weight:normal;}
+.catalog h2, .catalog h3 {color:#e5393e; line-height:62px; text-shadow:0 0 5px rgba(255,255,190,.75), 3px 4px 5px rgba(0,0,0,.75); text-align:center;}
+.catalog h2 {font-size:60px;}
+.catalog h3 {font-size:51px; margin-bottom:16px;}
+.catalog-items {font-size:0; margin-left:-90px;}
+.catalog-item {font-size:30px; display:-moz-inline-stack; display:inline-block; *display:inline; *zoom:1; vertical-align:top; position:relative; background:#f1e0c8; width:452px; padding:0 29px 16px; margin:0 0 61px 90px;}
+.catalog-item, .catalog-item h4 {font-size:30px;}
+.catalog-item h4 {margin:35px 0;}
+.catalog-item img {display:block; margin:0 auto 29px; height:150px;}
+.catalog-item p {color:#ee3034; text-align:right;}
+.catalog-item p .old {color:#000; text-decoration:line-through;}
+
+/* Request */
+.request, .reviews, .reviews-item {
+   margin:46px 0 57px;
+    -webkit-border-radius:18px;
+     -khtml-border-radius:18px;
+       -moz-border-radius:18px;
+         -o-border-radius:18px;
+            border-radius:18px;
+    -webkit-box-shadow: 3px 4px 5px rgba(77,72,64,.75), inset 3px 4px 5px rgba(255,255,255,.75);
+	 -khtml-box-shadow: 3px 4px 5px rgba(77,72,64,.75), inset 3px 4px 5px rgba(255,255,255,.75);
+	   -moz-box-shadow: 3px 4px 5px rgba(77,72,64,.75), inset 3px 4px 5px rgba(255,255,255,.75);
+    	 -o-box-shadow: 3px 4px 5px rgba(77,72,64,.75), inset 3px 4px 5px rgba(255,255,255,.75);
+    	    box-shadow: 3px 4px 5px rgba(77,72,64,.75), inset 3px 4px 5px rgba(255,255,255,.75);
+}
+.request {background:#e9a953; padding:50px 40px 1px;}
+.request h2 {text-align:center; color:#fff; margin:0 -20px;}
+.control {margin:29px 0;}
+.control input[type="text"] {border:0; width:100%; display:block;}
+.control-submit {margin:42px 0; text-align:center;}
+
+/* Reviews */
+.reviews {background:#fcd4a5; margin-bottom:0; padding:39px 28px 1px;}
+.reviews h2 {text-align:center; margin-bottom:48px;}
+.reviews-item {
+    background:#fceede; margin:28px 0; height:157px;
+    -webkit-box-shadow: none;
+	 -khtml-box-shadow: none;
+	   -moz-box-shadow: none;
+    	 -o-box-shadow: none;
+    	    box-shadow: none;
+}
+
+/* Benefits */
+.benefits {text-align:center; padding-bottom:60px;}
+.benefits .btn {font-size:58px; color:#000; margin:0 255px; display:block;}
+.benefits h2 {font-size:58px; line-height:72px;margin-bottom:64px; text-shadow:4px 7px 5px rgba(119,105,105,.75);}
+.benefits-items {background:url(../i/reasons.jpg) 0 0 no-repeat; height:169px; width:1308px; margin:0 auto; position:relative;}
+.benefits-item {position:absolute; width:360px; font-size:24px;}
+.benefits-item-1, .benefits-item-3, .benefits-item-5 {top:-33px;}
+.benefits-item-2, .benefits-item-4 {bottom:-28px;}
+.benefits-item-1 {left:-96px;}
+.benefits-item-2 {left:148px;}
+.benefits-item-3 {left:408px;}
+.benefits-item-4 {right:246px;}
+.benefits-item-5 {right:-29px;}
+
+/* =Media
+----------------------------------------------- */
+@media (max-width:1599px) {
+    body {font-size:24px; line-height:30px;}
+    /* =Buttons
+    ----------------------------------------------- */
+    .btn {line-height:66px; height:66px; font-size:24px;}
+    
+    /* =Header
+    ----------------------------------------------- */
+    .header h1 {font-size:50px; line-height:62px;}
+    .header p {font-size:26px; margin-top:64px;}
+    .header .contacts .btn {margin-bottom:33px;}
+    
+    /* Catalog */
+    .catalog h2, .catalog h3 {line-height:52px;}
+    .catalog h2 {font-size:50px;}
+    .catalog h3 {font-size:36px; margin-bottom:16px;}
+    .catalog-items {font-size:0; margin-left:-41px;}
+    .catalog-item {font-size:24px; width:45%; padding:0 0 35px; margin:0 0 41px 5%;}
+    .catalog-item, .catalog-item h4 {font-size:24px;}
+    .catalog-item img {height:auto; max-width:68%;}
+    .catalog-item p {text-align:center;}
+    
+    /* Request */
+    .request {padding-top:30px;}
+    .request h2 {font-size:24px; line-height:30px;}
+
+    /* Reviews */
+    .reviews {padding-top:19px; padding-bottom:19px;}
+    .reviews h2 {font-size:24px; line-height:30px; margin:0;}
+    .reviews-item {margin:18px 0; height:137px;}
+
+    /* Benefits */
+    .benefits {padding-bottom:60px;}
+    .benefits .btn {font-size:48px;}
+    .benefits h2 {font-size:48px; line-height:62px;}
+    .benefits-items {height:169px; width:100%; margin:0 auto; position:relative;}
+    .benefits-item-1 {left:-46px;}
+    .benefits-item-4 {right:165px;}
+    .benefits-item-5 {right:0;}
+}

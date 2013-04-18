@@ -167,4 +167,7 @@ ROOT_URLCONF = 'project.urls'
 SUBDOMAIN_URLCONFS = {
     'auto-usa': ROOT_URLCONF,
     'moto-usa': ROOT_URLCONF,
+    'naturkamen': ROOT_URLCONF,
+    'stone': ROOT_URLCONF,
+    'beauty': ROOT_URLCONF,
 }

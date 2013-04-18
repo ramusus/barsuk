@@ -6,5 +6,6 @@
 
 /project/static/
 /project/settings_local.py
+/project/sqlite.db
 /ford_fb_page
 /celeryev.pid
