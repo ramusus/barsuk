@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SITE=barsuk
+SITE_PATH=/var/www/barsuk
+PROJECT_PATH=/var/www/barsuk
+
+. /var/www/spawnlib.sh
