@@ -7,6 +7,10 @@ TEMPLATE_DEBUG = DEBUG
 PROJECT_ROOT = os.getcwd()
 ROOT = os.path.join(PROJECT_ROOT, 'project')
 
+SERVER_EMAIL = 'no-reply <no-reply@kworx.ru>'
+DEFAULT_FROM_EMAIL = 'no-reply <no-reply@kworx.ru>'
+EMAIL_SUBJECT_PREFIX = '[bardak lab] '
+
 ADMINS = (
     ('ramusus', 'ramusus@gmail.com'),
     ('admin', 'bmtestlp@yandex.ru'),
