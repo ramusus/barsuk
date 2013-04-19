@@ -7,9 +7,9 @@
 <!--[if IE 10 ]>    <html class="ie ie10" lang="ru"> <![endif]-->
 <!--[if gt IE 9]><!--><html lang="ru"><!--<![endif]-->
 <head>
-    <title>Автомобили из США. Выкуп, доставка по всей России.</title>
+    <title>Услуги профессиональных стилистов-визажистов на дому. Москва и Московская область</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ MEDIA_URL }}/css/auto.css">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/css/beauty.css">
     <link rel="stylesheet" href="{{ MEDIA_URL }}/css/common.css">
     <link rel="stylesheet" href="{{ MEDIA_URL }}/js/fancybox/jquery.fancybox-1.3.4.css">
     <script type="text/javascript" src="{{ MEDIA_URL }}/js/jquery-1.7.2.min.js"></script>
@@ -22,48 +22,76 @@
 'Михаил: Все обещания со своей стороны выполнили, вся информация была достоверная и своевременная. С пониманием отнеслись к решению моих запросов и проблем. Машину получил в срок, как и договаривались. Если еще соберусь приобретать машину из США, то непременно буду обращусь.',
 'Светлана: Впечатления самые положительные. Работаете четко, быстро, профессионально. Очень приятно было общаться. С самого начала видна была заинтересованность в сотрудничестве. Со стороны вашей компании не было ни одной задержки. Обязательно будем обращаться еще.',
 ];
-     </script>
+    </script>
     <!--[if lt IE 9]> <script type="text/javascript" src="{{ MEDIA_URL }}/js/html5.js"></script><![endif]-->
 </head>
 <body>
     <div class="page">
         <header class="header clearfix">
-            <img src="{{ MEDIA_URL }}/i/logo.png" alt="Автомобили из США. Выкуп, доставка по всей России." class="logo">
-            <h1>Автомобили из США. Выкуп, доставка по всей России.</h1>
             <p class="contacts">
-                Контактные телефоны<br>
-                +7 (968) 357-85-95<br>
-                +7 (965) 419-88-94<br>
+                Контактный телефон<br>
+                +7 (965) 419-88-94
                 <a href="#contact_form" class="btn btn-primary fancybox">Заказать звонок</a>
             </p>
+            <h1>Услуги профессиональных стилистов-визажистов на дому</h1>
+            <p>Москва и Московская область</p>
         </header><!-- /Header -->
 
         <div class="content">
-            <div class="promo clearfix">
+            <div class="clearfix">
                 <div class="col-l">
-                    <ul class="promo-items">
-                        <li class="promo-item">Ищешь автомобиль из&nbsp;США без пробега по&nbsp;РФ?</li>
-                        <li class="promo-item">Хочешь машину, которая нравится, а&nbsp;не&nbsp;ту, которая продается в&nbsp;твоем городе?</li>
-                        <li class="promo-item">Нет всей суммы на&nbsp;покупку машины&nbsp;мечты?</li>
+                    <div class="promo">
+                        <span class="clr">Нет времени</span> на салон красоты?<br>
+                        У тебя скоро <span class="clr">свадьба?</span><br>
+                        <span class="clr">ОН</span> неожиданно пригласил на свидание?<br>
+                        Или сегодня <span class="clr">важная</span> деловая встреча?<br>
+                        А может быть, просто <span class="clr">не хочется</span> выходить из дома?
+                    </div>
+                    <h2 class="special">Наши специалисты приедут в назначенное время в удобное для Вас место и удовлетворят любой Ваш каприз:</h2>
+                    <ul class="work">
+                        <li>макияж<img src="{{ MEDIA_URL }}/i/t1.jpg" alt=""></li>
+                        <li>прическа<img src="{{ MEDIA_URL }}/i/t2.jpg" alt=""></li>
+                        <li>маникюр<img src="{{ MEDIA_URL }}/i/t3.jpg" alt=""></li>
+                        <li>педикюр<img src="{{ MEDIA_URL }}/i/t4.jpg" alt=""></li>
                     </ul>
+                    <h3 class="possible">Мы можем сопровождать Вас и поддерживать Вашу красоту в течение всего дня или ночи.</h3>
+                    <p><a href="#contact_form" class="btn-request fancybox">Оставить заявку</a></p>
+
+                    <div class="rules">
+                        <h2>Наши <span class="clr">золотые</span> правила:</h2>
+                        <ul>
+                            <li>Клиент <br>всегда прав<img src="{{ MEDIA_URL }}/i/r1.jpg" alt=""></li>
+                            <li><span class="clr">Пунктуальность</span><img src="{{ MEDIA_URL }}/i/r2.jpg" alt=""></li>
+                            <li>Подарки <br>всем клиентам<img src="{{ MEDIA_URL }}/i/r3.jpg" alt=""></li>
+                            <li><span class="clr">Гарантия <br>качества</span><img src="{{ MEDIA_URL }}/i/r4.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-r">
                     <aside class="request">
                         <form action="{% url 'contact_form' %}" method="post">
-                            <h2>Заполни форму и&nbsp;получи подарок!</h2>
+                            <h2>Оставить заявку</h2>
                             {% csrf_token %}
                             {{ form.as_p }}
                             <div class="control control-submit">
-                                <input type="submit" tabindex="4" value="Отправить" class="btn">
+                                <input type="submit" tabindex="5" value="Отправить" class="btn-send">
                             </div>
                         </form>
                     </aside>
 
-                    <aside class="promo-ad">
+                    <aside class="reviews">
+                        <h2>Отзывы наших клиентов:</h2>
+                        <div class="reviews-items">
+                            <div class="reviews-item"></div>
+                        </div>
+                    </aside>
+
+                    <aside class="sale">
                         <h2>Акция!</h2>
-                        <p>Успей заказать до 5.05.2013 и мы подарим тебе бутылку ВИСКИ</p>
+                        <p>Фотосессия в подарок при заказе <span class="clr">до 5 мая!</span></p>
                         <br>
-                        <object type="application/x-shockwave-flash" data="http://infobusiness2.ru/files/flashtimer/cdt_main.swf" style="width: 350px; height: 200px; float: center;">
+                        <object type="application/x-shockwave-flash" data="http://infobusiness2.ru/files/flashtimer/cdt_main.swf" style="width: 280px; height: 200px; float: center;">
                             <param name="movie" value="http://infobusiness2.ru/files/flashtimer/cdt_main.swf" />
                             <param name="base" value="." />
                             <param name="flashvars" value="
@@ -91,48 +119,8 @@
                             <param name="salign" value="lt" />
                         </object>
                     </aside>
-
-                    <aside class="reviews">
-                        <h2>Отзывы покупателей:</h2>
-                        <div class="reviews-items"></div>
-                    </aside>
                 </div>
-            </div><!-- /Promo -->
-
-            <section class="benefits">
-                <h2>Почему именно мы?</h2>
-                <ul class="benefits-items">
-                    <li class="benefits-item">&mdash;&nbsp;Мы&nbsp;осуществляем доставку в&nbsp;любую точку Российской Федерации;</li>
-                    <li class="benefits-item">&mdash;&nbsp;У&nbsp;нас выгодные цены и&nbsp;гибкая система скидок;</li>
-                    <li class="benefits-item">&mdash;&nbsp;Индивидуальный подход;</li>
-                    <li class="benefits-item">&mdash;&nbsp;Эксклюзивные модели;</li>
-                    <li class="benefits-item">&mdash;&nbsp;Возможна продажа оптом и&nbsp;в&nbsp;розницу;</li>
-                    <li class="benefits-item">&mdash;&nbsp;Все хлопоты с&nbsp;таможенным оформлением мы&nbsp;берем на&nbsp;себя;</li>
-                    <li class="benefits-item">&mdash;&nbsp;Вам не&nbsp;обязательно иметь на&nbsp;руках всю сумму&nbsp;&mdash; в&nbsp;момент сделки Вы&nbsp;вносите&nbsp;50%, оставшаяся сумма уплачивается при доставке.</li>
-                </ul>
-                <p><a href="#contact_form" class="btn btn-primary fancybox">Оставить заявку</a></p>
-            </section>
-
-            <section class="work">
-                <h2>Как мы работаем?</h2>
-                <ul class="work-items">
-                    <li class="work-item work-item-1">Заявка</li>
-                    <li class="work-item work-item-2">Подбор и расчет стоимости ТС</li>
-                    <li class="work-item work-item-3">Предоплата 50%</li>
-                    <li class="work-item work-item-4">Выкуп и доставка</li>
-                    <li class="work-item work-item-5">Оплата</li>
-                </ul>
-            </section>
-
-            <div class="possible">
-                <p>И&nbsp;все это возможно, не&nbsp;выходя из&nbsp;дома: мы&nbsp;работаем также с&nbsp;безналичным расчетом и&nbsp;сами осуществляем доставку до&nbsp;Вас.</p>
             </div>
-
-            <ul class="delivery-items">
-                <li class="delivery-item">Бесплатная доставка до&nbsp;Вашего гаража<img src="{{ MEDIA_URL }}/i/gift.jpg"></li>
-                <li class="delivery-item">100% возврат денег в&nbsp;случае нарушения сроков доставки<img src="{{ MEDIA_URL }}/i/money-back.jpg"></li>
-                <li class="delivery-item">Полный бак бензина в&nbsp;подарок<img src="{{ MEDIA_URL }}/i/gift-gas.jpg"></li>
-            </ul>
 
         </div><!-- /Content -->
     </div><!-- /Page -->
@@ -145,7 +133,7 @@
                     {% csrf_token %}
                     {{ form.as_p }}
                     <div class="control control-submit">
-                        <input type="submit" tabindex="4" value="Отправить" class="btn">
+                        <input type="submit" tabindex="5" value="Отправить" class="btn-send">
                     </div>
                 </form>
             </aside

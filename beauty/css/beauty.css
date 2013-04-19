@@ -1,0 +1,89 @@
+@import "reset.css";
+
+/* Global styles
+----------------------------------------------- */
+html, body, .page {height:100%;}
+body > .page {height:auto; min-height:100%;}
+
+body, input[type="text"] {background:#fff; font:30px/37px Verdana, Tahoma, Arial, sans-serif; color:#000;}
+
+.page {margin:0 auto; width:1561px; padding:0 10px;}
+.clr {color:#ff6d0b;}
+
+h2 {font-size:30px; line-height:37px; font-weight:normal;}
+
+.clearfix {*zoom:1; position:relative;}
+.clearfix:before,
+.clearfix:after {display:table; content:""; line-height:0;}
+.clearfix:after {clear:both;}
+
+/* =Header
+----------------------------------------------- */
+.header {background:url(../i/header-bg.jpg) 0 0 no-repeat; height:339px; position:relative; margin:15px 0 10px 0; color:#000; z-index:2;}
+.header h1, .header p {display:none;}
+.header .contacts {display:block; width:293px; text-align:center; float:right; clear:right; padding-top:83px; margin:0 13px 0 0; font-size:24px; line-height:30px; text-shadow: 3px 4px 5px rgba(106,5,5,.75);
+}
+.header .contacts .btn {width:242px; height:86px; background:url(../i/btn-call.png); text-indent:-9999em; margin:56px auto 0; display:block;}
+
+/* =Content
+----------------------------------------------- */
+/* Columns */
+.col-l {float:left; width:1238px;}
+.col-r {float:right; clear:right; width:271px; margin: 0 15px 0 0;}
+
+/* Promo */
+.promo {font-size:45px; font-style:italic; line-height:54px; background:url(../i/girl.jpg) 100% 0 no-repeat; padding:0 367px 0 51px; text-align:center;}
+
+.special {
+    font-size:40px; text-shadow: 1px 1px 5px rgba(0,0,0,.75); margin:60px 65px 60px 34px; background:#ff6d0b; padding:32px; line-height:50px;
+    -webkit-box-shadow: 7px 12px 17px 1px rgba(116,57,14,.75), inset 3px 4px 5px rgba(0,0,0,.75);
+       -moz-box-shadow: 7px 12px 17px 1px rgba(116,57,14,.75), inset 3px 4px 5px rgba(0,0,0,.75);
+    	    box-shadow: 7px 12px 17px 1px rgba(116,57,14,.75), inset 3px 4px 5px rgba(0,0,0,.75);
+}
+
+.work {font-size:40px; text-align:center; overflow:hidden;}
+.work img {display:block; margin:20px auto;}
+.work li {width:25%; float:left; list-style:inside disc;}
+
+.possible {text-align:center; font-size:36px; line-height:40px; font-weight:normal; width:950px; margin:30px auto;}
+.btn-request {width:600px; height:108px; background:url(../i/btn-request.jpg); text-indent:-9999em; margin:0 auto; display:block;}
+
+.rules h2 {font-size:48px; text-shadow: 1px 1px 5px rgba(0,0,0,.75); text-align:center; margin:40px 0;}
+.rules {font-size:36px; text-align:center; overflow:hidden;}
+.rules img {display:block; margin:20px auto;}
+.rules li {width:25%; float:left; list-style:inside disc;}
+
+/* Request */
+.reviews, .reviews-item {
+   margin:46px 0 57px;
+    -webkit-border-radius:18px;
+     -khtml-border-radius:18px;
+       -moz-border-radius:18px;
+         -o-border-radius:18px;
+            border-radius:18px;
+            -webkit-box-shadow: 7px 12px 17px 1px rgba(116,57,14,.75);
+               -moz-box-shadow: 7px 12px 17px 1px rgba(116,57,14,.75);
+            	    box-shadow: 7px 12px 17px 1px rgba(116,57,14,.75);
+}
+.request {background:#000; padding:50px 40px 1px; color:#e0510d; margin-top:-30px;}
+.request h2 {text-align:center;}
+.control {margin:29px 0;}
+.control label {display:block; font-size:24px;}
+.control input[type="text"], .control textarea {border:0; width:100%; display:block; background:#f7dacd;}
+.control-submit {margin:42px 0; text-align:center;}
+.btn-send {width:213px; height:58px; background:url(../i/btn-send.png); text-indent:-9999em; margin:0 auto; display:block; border:0;}
+
+/* Reviews */
+.reviews {background:#e0510d; margin:40px -15px; padding:39px 29px 1px;}
+.reviews h2 {text-align:center; margin-bottom:18px; font-size:24px;}
+.reviews-item {background:#f7dacd; margin:18px 0; height:198px;}
+
+/* Sale */
+.sale {
+    text-align:center; background:#f7dacd; font-size:24px; line-height:30px; margin:40px -15px; padding:20px 10px 40px;
+    -webkit-box-shadow:inset 3px 4px 5px rgba(0,0,0,.75);
+       -moz-box-shadow:inset 3px 4px 5px rgba(0,0,0,.75);
+    	    box-shadow:inset 3px 4px 5px rgba(0,0,0,.75);
+}
+.sale h2, .sale .clr {color:#eb0606;}
+.sale h2 {font-size:43px; line-height:48px; margin-bottom:10px;}

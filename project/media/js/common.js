@@ -10,6 +10,9 @@ function show_review() {
 }
 
 $(function() {
+    $('input:text').each(function(){
+        $(this).prev('label').andSelf().wrapAll('<div class="control"></div>');
+    });
     $('.fancybox').fancybox({});
     show_review();
 });

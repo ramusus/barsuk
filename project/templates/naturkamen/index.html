@@ -44,7 +44,6 @@
                             <h2>Оставить заявку</h2>
                             {% csrf_token %}
                             {{ form.as_p }}
-                            <div class="control"></div>
                             <div class="control control-submit">
                                 <input type="submit" tabindex="4" value="OK" class="btn">
                             </div>
@@ -105,7 +104,6 @@
                             <h2>Оставить заявку</h2>
                             {% csrf_token %}
                             {{ form.as_p }}
-                            <div class="control"></div>
                             <div class="control control-submit">
                                 <input type="submit" tabindex="4" value="OK" class="btn">
                             </div>
@@ -145,7 +143,6 @@
                     <h2>Заполни форму и&nbsp;получи подарок!</h2>
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <div class="control"></div>
                     <div class="control control-submit">
                         <input type="submit" tabindex="4" value="Отправить" class="btn">
                     </div>
@@ -153,9 +150,6 @@
             </aside
         </div>
     </div>
-    <script type="text/javascript">
-        $('input:text').wrap('<div class="control"></div>');
-    </script>
 
 </body>
 </html>
