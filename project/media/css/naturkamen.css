@@ -53,7 +53,9 @@ h2 {font-size:30px; line-height:37px; font-weight:normal;}
 .header {background:url(../i/header-bg.jpg) 0 0 no-repeat; height:341px; position:relative; margin:30px 44px 10px 0; color:#fff;}
 .header h1, .header p {margin-left:253px; margin-right:350px;}
 .header h1 {font-size:60px; line-height:72px; text-align:center; font-weight:normal; margin-top:30px;}
-.header p {font-size:36px; text-align:right; margin-top:84px;}
+.header p {font-size:36px; text-align:right; margin-top:24px;}
+.header p.prices {margin-left:23px;}
+.header a {color:#fff;}
 .header .contacts {
     width:325px; text-align:center; float:right; clear:right; padding-top:83px; margin:0 -44px 0 0; font-size:24px; line-height:30px;
     background:#a6917c;
@@ -146,7 +148,7 @@ h2 {font-size:30px; line-height:37px; font-weight:normal;}
     /* =Header
     ----------------------------------------------- */
     .header h1 {font-size:50px; line-height:62px;}
-    .header p {font-size:26px; margin-top:64px;}
+    .header p {font-size:26px; margin-top:24px;}
     .header .contacts .btn {margin-bottom:33px;}
 
     /* Catalog */
