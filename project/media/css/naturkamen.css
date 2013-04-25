@@ -72,6 +72,11 @@ h2 {font-size:30px; line-height:37px; font-weight:normal;}
 }
 .header .contacts .btn {margin:69px 0 14px; font-size:24px; width:284px;}
 
+.footer {background:url(../i/bg.jpg) 0 0 no-repeat; height:200px; position:relative;}
+.footer ul {clear: both; padding-left: 40px;}
+.footer li {float: left; margin: 40px 50px 0 0;}
+.footer li a {color: #FFF;}
+
 /* =Content
 ----------------------------------------------- */
 /* Columns */
